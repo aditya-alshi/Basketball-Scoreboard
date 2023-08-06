@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="next-game.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="score-boards board-1" id="home">
+            <div class="board-content board-content-1" >
+                <h1>HOME</h1>
+            </div>
+            <div class="board-content board-content-2"><h1 id="home-score">0</h1></div>
+            <div class="board-content board-content-3">
+                <button onclick="homePlusOne()"><h3 id="home-score-plus-one">+1</h3></button>
+                <button onclick="homePlusTwo()"><h3 id="home-score-plus-two">+2</h3></button>
+                <button onclick="homePlusThree()"><h3 id="home-score-plus-three">+3</h3></div></button>
+        </div>
+
+        <div class="score-boards board-2">
+            <div class="board-content board-content-1"><h1>GUEST</h1></div>
+            <div class="board-content board-content-2"><h1 id="guest-score">0</h1></div>
+            <div class="board-content board-content-3">
+                <button  onclick="guestPlusOne()"><h3 id="guest-score-plus-one">+1</h3></button>
+                <button onclick="guestPlusTwo()"><h3 id="guest-score-plus-two">+2</h3></button>
+                <button onclick="guestPlusThree()"><h3 id="guest-score-plus-three">+3</h3></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="next-game"><button onclick="newGame()"><h1>New Game</h1></button></div>
+    <script src="index.js"></script>
+</body>
+</html>
